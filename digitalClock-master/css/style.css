@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    margin: 200px auto;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    background: #888;
+}
+
+.container {
+    background-color: rgb(246, 194, 131);
+    width: 40%;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: 5rem;
+}
+
+#clockDate {
+    font-weight: 900;
+    font-size: 2.5rem;
+}

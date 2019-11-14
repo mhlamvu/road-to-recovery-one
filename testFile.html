@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background: #888;
+        }
+
+        .container {
+            border-radius: 1.5rem;
+            text-align: center;
+            background: #444;
+            margin: 0 auto;
+            width: 50%;
+            align-content: center;
+            padding: 1.2rem;
+        }
+    </style>
+    <title>Test</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="hello">Hello <span class="name">Name</span></h1>
+        <input value="" class="inputEl" id="inputEl" type="text" placeholder="Enter stuff...">
+        <button id="button">Say</button>
+    </div>
+    <script>
+        const alert = document.querySelector('.name')
+        const submit = document.getElementById('button')
+        submit.addEventListener('click', replaceText)
+        
+        function replaceText(){
+            const inputEl = document.querySelector('.inputEl')
+            const span = document.querySelector('.name')
+            
+            // console.log('clicked')
+            // span.appendChild(input.value)
+            // console.log(span)
+            console.log(span.innerHTML)
+            span.innerHTML = inputEl.value
+            inputEl.value = ''
+            
+        }
+    </script>
+</body>
+</html>
